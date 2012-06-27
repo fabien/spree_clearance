@@ -1,4 +1,4 @@
-Admin::ProductsController.class_eval do
+Spree::Admin::ProductsController.class_eval do
   
   update.before :handle_marked_for_clearance 
   

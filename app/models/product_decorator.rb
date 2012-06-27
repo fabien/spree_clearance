@@ -1,4 +1,4 @@
-Product.class_eval do
+Spree::Product.class_eval do
   
   scope :marked_for_clearance, where("products.marked_for_clearance_at IS NOT NULL").order("marked_for_clearance_at DESC")
   
